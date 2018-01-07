@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload file</title>
+
+</head>
+<body>
+
+<h1>Upload new File</h1>
+<form method=post enctype=multipart/form-data>
+    <p><input type=file name=file>
+        <input type=submit value=Upload>
+</form>
+
+
+<h1>Cities</h1>
+
+<div class="alert">
+    Invalid City
+</div>
+
+<form value="city">
+    <legend>New City</legend>
+    <input name="name" placeholder="Name"><br/>
+    <input name="description" placeholder="Description">
+    <input type="Submit">
+</form>
+
+<ul class='city-list'></ul>
+
+
+
+<script type=text/javascript src="{{url_for('static', filename='jquery.js') }}"></script>
+<script type=text/javascript src="{{url_for('static', filename='client2.js') }}"></script>
+
+<script>
+    $(document).ready(function() {
+        alert("babababa bbaba");
+        $('.city-list').append("<li>blaaaaaaaaaaa</li>")
+    });
+</script>
+
+</body>
+</html>
+
